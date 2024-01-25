@@ -44,9 +44,9 @@ I used docker desktop 4.25.1 for this project as the latest version 4.26 had som
 
 - What I have not included with the app but would design with the app:
     - For the purposes of testing the server is hosted on a local environment for hosting it in an actual environment with the ability to reverse proxy and load balance, we would use something like nginx, apache, gunicorn or uWSGI (specific to python) to deploy the server. Webservers also provide automatic request handling, authentication and other features.
-    - Reverse proxying and load balancing (for example tools like rabbitmq) makes sure that the python server is actually using it's resorces effectively by eliminating trivial, but massive requests such as requests to static files. This enables the app to scale horizontally while also being cost effective.
+    - Reverse proxying and load balancing makes sure that the python server is actually using it's resorces effectively by eliminating trivial, but massive requests such as requests to static files. This enables the app to scale horizontally while also being cost effective.
     - I decided against django for such a small application since the structuring of django would make it consume a lot of resources unncesessarily, being batteries included.
-    - I also decided to use a dictionary to simulate some form of persistency of data however to achieve actual persistency a database like sqlite3 or postgres would be used instead.
+    - I also decided to use a dictionary to simulate some form of persistency of data however to achieve actual persistency a database like postgres would be used instead.
 
 - Hence, in my opinion the strongest points of a microservice architecture are, and these are some of the problems that designing a microservice architecture system helps solve:
     - Scalability of individual components
