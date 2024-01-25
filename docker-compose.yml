@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  central_microservice:
+    build: ./centralMicroservice
+    ports:
+      - "8000:8000"
+
+  sentiment_analysis:
+    build: ./sentimentAnalysis
+    ports:
+      - "8001:8001"
+
+  word_count:
+    build: ./wordCount
+    ports:
+      - "8002:8002"
+
+  entity_recognition:
+    build: ./entityRecognition
+    ports:
+      - "8003:8003"
