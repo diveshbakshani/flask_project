@@ -6,7 +6,7 @@ This is a Flask application that utilizes Python 3.12, Flask, pytest, Docker, do
 
 ## How to Run
 
-1. Clone the repository: `git clone [repository URL]`
+1. Clone the repository: `git clone [[repository URL]](https://github.com/diveshbakshani/flask_project)`
 2. Build and run the docker images while in base directory enter:
     docker compose build --no-cache
 3. Once it's done building enter the following in terminal to run the docker images (in detached mode), or you can use docker desktop to run them from there as a group.
