@@ -13,11 +13,11 @@ This is a Flask application that utilizes Python 3.12, Flask, pytest, Docker, do
     docker-compose up -d
 4. Once the containers start up you can access the microservices as laid out in the Assignment PDF
 5. Or you can use postman to check the outputs by sending GET and POST requests to the endpoints:
-* http://localhost:8000/analyze
-* http://localhost:8000/services
-* http://localhost:8001/analyze
-* http://localhost:8002/count
-* http://localhost:8003/recognize
+    * http://localhost:8000/analyze
+    * http://localhost:8000/services
+    * http://localhost:8001/analyze
+    * http://localhost:8002/count
+    * http://localhost:8003/recognize
 
 I used docker desktop 4.25.1 for this project as the latest version 4.26 had some issues with internal host routing.
 
